@@ -66,6 +66,36 @@ const createUser = async (req, res) => {
     }
 };
 
+const loginUser = async (req, res) => {
+    try {
+        const { username, password } = req.body;
+
+        // Find the user in the database based on the provided username
+        const user = await userSchema.findOne({ username });
+
+        // If the user doesn't exist, send an error response
+        if (!user) {
+            return res.status(400).json({ error: "Invalid username or password" });
+        }
+
+        // Compare the provided password with the hashed password stored in the database
+        const isPasswordValid = await bcrypt.compare(password, user.password);
+
+        // If the passwords don't match, send an error response
+        if (!isPasswordValid) {
+            return res.status(400).json({ error: "Invalid username or password" });
+        }
+
+        // Authentication successful
+        console.log("Login successful!");
+        res.sendStatus(200);
+    } catch (error) {
+        console.error("Error during login:", error);
+        res.sendStatus(500);
+    }
+};
+
 module.exports = {
     createUser,
+    loginUser,
 };
