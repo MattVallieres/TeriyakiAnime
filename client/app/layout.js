@@ -1,4 +1,5 @@
 import { UserProvider } from '@auth0/nextjs-auth0/client';
+import { Header } from "./components/Header";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <UserProvider>
         <body>
+          <Header />
           {children}
         </body>
       </UserProvider>
