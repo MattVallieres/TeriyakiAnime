@@ -1,11 +1,14 @@
 import { Hero } from "./components/Hero";
-import { Recommendations } from "./components/recomendations";
+import { Popular } from "./components/Popular";
+
+import { Recommendations } from "./components/Recomendations";
 
 export default function Home() {
   return (
     <>
     <Hero />
     <Recommendations />
+    <Popular />
     </>
   );
 }
