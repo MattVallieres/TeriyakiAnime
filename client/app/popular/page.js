@@ -101,7 +101,7 @@ export default function Popular() {
         <h2 className="font-bold uppercase text-xl xl:text-2xl mb-8">
           What's Popular
         </h2>
-        <div className="">
+
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-8">
             {isLoading
               ? Array.from({ length: 25 }).map((_, index) => (
@@ -124,7 +124,6 @@ export default function Popular() {
                   </div>
                 ))}
           </div>
-        </div>
       </div>
 
       <div className="flex uppercase justify-center mt-6 mb-20 text-[#ff9100] text-2xl">

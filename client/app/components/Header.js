@@ -37,10 +37,10 @@ export const Header = () => {
         <div className="flex">
           <div className="hidden md:flex font-bold uppercase text-sm">
           <Link
-              href="/browse"
+              href="/search"
               className="flex items-center px-4 hover:text-orange-600 hover:bg-neutral-900 duration-200"
             >
-              Browse
+              Search
             </Link>
             <Link
               href="/popular"

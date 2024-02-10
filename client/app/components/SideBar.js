@@ -32,12 +32,12 @@ export const SideBar = () => {
     <>
       <div className="pt-4 p-4 text-sm font-bold">
         <Link
-          href="/browse"
+          href="/search"
           className="py-2 flex uppercase text-bold items-center"
           onClick={handleNav}
         >
           <FaSearch className="mr-2 flex" />
-          Browse
+          Search
         </Link>
         <Link
           href="/popular"
