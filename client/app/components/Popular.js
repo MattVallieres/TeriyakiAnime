@@ -65,8 +65,8 @@ export const Popular = () => {
       </div>
       <div className="flex mt-10">
         <Link
-          href="/recommendation"
-          className="border-[#1a1a1a] uppercase bg-[#1a1a1a] font-bold p-2 px-4 hover:bg-orange-600 duration-300 hover:border-orange-600 text-lg "
+          href="/popular"
+          className="border-[#1a1a1a] uppercase bg-[#1a1a1a] font-bold p-2 px-4 hover:bg-orange-600 duration-300 text-lg "
         >
           Browse more
         </Link>
