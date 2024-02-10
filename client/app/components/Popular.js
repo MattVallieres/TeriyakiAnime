@@ -9,7 +9,7 @@ export const Popular = () => {
   // data will load before they are fetched
   const [isLoading, setIsLoading] = useState(true);
 
-  // renders the page when the page loads
+  // fetches the data when the page loads
   useEffect(() => {
     fetchData();
   }, []);

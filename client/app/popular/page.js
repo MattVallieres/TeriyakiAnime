@@ -18,13 +18,13 @@ export default function Popular() {
   // 'displays the page numbers
   const [displayedPages, setDisplayedPages] = useState([]);
 
-  // renders the page when the page loads
+  // renders the current page 
   useEffect(() => {
     fetchData();
   }, [currentPage]);
 
+  // renders the current and total pages 
   useEffect(() => {
-    // which page numbers to show.
     generateDisplayedPages();
   }, [totalPages, currentPage]);
 

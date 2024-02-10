@@ -14,7 +14,7 @@ export const DropDown = () => {
   // loading state
   const [loading, setLoading] = useState(true);
 
-  // loads the users info when the page renders
+  // loads the user info from auth0
   useEffect(() => {
     setLoading(isLoading);
   }, [isLoading]);

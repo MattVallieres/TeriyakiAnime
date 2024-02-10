@@ -8,7 +8,7 @@ export const Recommendations = () => {
   // data will load before they are fetched
   const [isLoading, setIsLoading] = useState(true);
 
-  // renders the page when the page loads
+  // fetches the data when page loads
   useEffect(() => {
     fetchData();
   }, []);
