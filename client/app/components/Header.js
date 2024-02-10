@@ -49,10 +49,10 @@ export const Header = () => {
               Popular
             </Link>
             <Link
-              href="/recomendations"
+              href="/recommendations"
               className="flex items-center px-4 hover:text-orange-600 hover:bg-neutral-900 duration-200"
             >
-              Recomendations
+              Recommendations
             </Link>
           </div>
           <DropDown />

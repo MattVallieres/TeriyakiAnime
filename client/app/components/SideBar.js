@@ -48,12 +48,12 @@ export const SideBar = () => {
           Popular
         </Link>
         <Link
-          href="/recomendations"
+          href="/recommendations"
           className="py-2 flex uppercase text-bold items-center"
           onClick={handleNav}
         >
           <ImHappy2 className="mr-2 flex" />
-          Recomendations
+          Recommendations
         </Link>
         <p className="border-b border-solid border-[#2a2a2a] uppercase my-4"></p>
         {loading ? (
